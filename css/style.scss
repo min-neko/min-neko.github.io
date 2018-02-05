@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import url(../bootstrap.min.css);
+@import url(../font-awesome.min.css);
+@import url(../reset.css);
+@import url(../animate.min.css);
+
+
+body, input, select, textarea, button, .ist-container {
+  font-style: normal;
+  font-family: "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+a {
+  color: #000;
+  :hover {
+    color: blue;
+  }
+}
+
+p {
+  color: #f00;
+  ul {
+    color: #fff;
+    li {
+      padding: 10px
+    }
+  }
+}
+/*logo*/
+h1.logo{
+  padding:15px 0;
+  margin-bottom:0;
+}
+.menu-top {
+  .list-inline-item a {
+    padding-right: .5rem;
+    font-size: 15px;
+  }
+}
+/*language*/
+.language{
+  a{
+    img{
+      width: 25px;
+      box-shadow: 0px 0px 5px 1px #ccc;
+    }
+  }
+}
+
+/* Navigation bar*/
+.main-menu {
+  .navbar-nav {
+    li.nav-item {
+      ::after {
+        content: "|";
+        padding-left: 8px;
+      }
+
+      :last-child {
+        ::after {
+          content: "";
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .box-search{
+    position: absolute;
+    right: 0;  
+    width: 32px;
+    height: 32px;  
+    .btn-search{
+      width: 32px;
+      span{
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        padding: 10px;
+      }      
+    }
+    input{
+        display: none;
+        margin-top: 38px;
+        z-index: 99;
+        right: 0;
+        transition: all 2s;
+        padding: 5px 10px;
+      }
+    &:hover{
+      width:200px;
+      transition: all 2s;
+      input{
+        position: absolute;
+        margin-top: 38px;
+        z-index: 99;
+        right: 0;
+        transition: all 2s;
+        display:block;
+      }
+    }
+  }
+}
+.wraper.homepage{
+	.business-in-vietnam {
+	  .right-side {
+	  	width: 100%;
+	    li {
+		    padding: 10px 0 0px 15px;
+		    width: 50%;
+		    float: left;
+		    margin-right: 0;
+	      a{
+	      	img{
+	      		width: 100%;
+	      		height: 170px;
+	      	}	      	
+	      }
+	      &:nth-child(2), &:nth-child(4){
+	      	img{
+	      		float: right;
+	      	}
+	      }
+	    }
+	  }
+	  .left-side {
+	  	li.service-title {
+			width: 100%;
+		    padding: 20px 0 20px 10px;
+		    margin: 15px 0;
+		    border-radius: 5px;
+		    box-shadow: 0px 1px 3px 1px #ccc;
+		    span{
+			    position: absolute;
+			    float: right;
+			    width: 30px;
+			    height: 45px;
+			    right: 25px;
+			    margin-top: -10px;
+			    background: url(../img/icon-next.png) 100% no-repeat;
+		    }
+		    &:nth-child(1){
+				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+		  	}
+		  	&:nth-child(2){
+				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+		  	}
+		  	&:nth-child(3){
+				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+		  	}
+		  	&:nth-child(4){
+				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+		  	}
+		  	a{
+		  		color: #fff;
+		  	}
+	  	}
+	  	
+	  }
+
+	}
+	.title-news, .title-product{
+		h3{
+			width: 100%;
+			border-bottom: 5px solid #1098cc;
+		    font-size: 30px;
+		    font-weight: bold;
+		    color: #00406d;
+			span{
+				i{
+					color: #00aff0;
+	    			padding: 15px 15px 0 0;
+				}
+			}
+		}
+
+	}
+	.new-deatail-home{
+		.row{
+			padding: 10px 0;
+			border-bottom: 1px dashed #ccc;
+		}
+	}
+}
+.footer-service{
+	background: #dddddd;
+	padding: 20px 0;
+	.box-info-inner{
+		h3{
+			font-size:14px;
+			font-weight:bold;
+			padding: 10px 0;
+		}
+		ul{
+			li{
+				a{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	
+}
+.footer-map{
+	background: #707070;
+	color: #fff;
+	padding: 20px 0;
+	h2{
+		font-weight:bold;
+		font-size:14px;
+
+	}
+	ul{
+		li{
+			a{
+				color: #fff;
+				font-weight:normal;
+				font-size:14px;
+			}
+		}
+	}
+}
+.footer-coppy-right {
+	background: #464646;
+	padding: 10px 0;
+	a{
+		font-size: 12px;
+		color: #fff;
+	}
+}
